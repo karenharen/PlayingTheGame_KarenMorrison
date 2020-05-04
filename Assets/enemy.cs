@@ -8,6 +8,7 @@ public class enemy : MonoBehaviour
     private GameObject player;
 
     public float speed;
+    private int outOfBounds = -10;
 
     // Start is called before the first frame update
     void Start()
@@ -18,8 +19,13 @@ public class enemy : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
+    {     
         Vector3 moveDir = (player.transform.position - transform.position).normalized;
         enemyRB.AddForce(moveDir * speed);
+
+        if (transform.position.y < outOfBounds)
+        {
+            Destroy(gameObject);
+        }
     }
 }
