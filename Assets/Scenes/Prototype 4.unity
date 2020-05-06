@@ -483,6 +483,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyPrefab: {fileID: 4009866000020193085, guid: 500555b962903d441a6ff694904c19f5,
     type: 3}
+  powerUpPrefab: {fileID: 4307449371495563580, guid: 038901d70db005443adba2c41ac851b9,
+    type: 3}
 --- !u!4 &1151391138
 Transform:
   m_ObjectHideFlags: 0
@@ -1021,6 +1023,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: powerup
+      objectReference: {fileID: 0}
+    - target: {fileID: 4307449371495563580, guid: 038901d70db005443adba2c41ac851b9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4309844639447267112, guid: 038901d70db005443adba2c41ac851b9,
         type: 3}
